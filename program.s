@@ -17,7 +17,7 @@ _start:
     int $SYSCALL
 
     cmp  $0, %eax
-    je end
+    jbe end
 
     cmpb $65, character 
     jb wrongCharacter
